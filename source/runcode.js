@@ -1,5 +1,6 @@
 function runCode(scriptText) {
     try {
+        scriptText = scriptText.replace(/<<NL>>/g, "\n");
         const codeFunction = new Function(scriptText);
         try {
             codeFunction();

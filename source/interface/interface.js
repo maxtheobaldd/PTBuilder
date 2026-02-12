@@ -12,7 +12,7 @@ function pasteFromClipboard() {
 
 function executeCode() {
     var code = document.getElementById("codeeditor").value;
-    code = code.replace(/\n/g, "");
+    code = code.replace(/\n/g, "<<NL>>");
     $se("runCode", code)
 }
 
