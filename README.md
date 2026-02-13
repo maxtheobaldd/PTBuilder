@@ -49,3 +49,17 @@ Once installed, you can open the code editor at any time by clicking **Extension
 ## Documentation
 
 In the [Wiki](https://github.com/kimmknight/PTBuilder/wiki), you will find information on the available functions, as well as lists of usable devices, links, and modules.
+
+## MCP Server
+
+This repository now includes a MCP server in [`mcp-server/`](mcp-server) that helps an AI client compose Packet Tracer topologies and generate Builder-compatible JavaScript.
+
+Quick start:
+
+```bash
+cd mcp-server
+npm install
+npm start
+```
+
+Then call `generate_builder_script` and execute the resulting JavaScript in **Extensions → Builder Code Editor**.
